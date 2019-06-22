@@ -21,7 +21,7 @@ export class CanvasComponent implements AfterViewInit {
   @Input() public height = 400;
 
   private cx: CanvasRenderingContext2D;
-  private signatureData: string = undefined;
+  private imageData: string = undefined;
 
   constructor () {}
 
@@ -149,12 +149,12 @@ export class CanvasComponent implements AfterViewInit {
   }
 
   clearCanvas() {
-    this.signatureData = undefined;
+    this.imageData = undefined;
     this.cx.clearRect(0, 0, this.cx.canvas.width, this.cx.canvas.height);
     // this.drawSignatureLine();
   }
 
-  submitSignature() {
-    this.signatureData = this.cx.canvas.toDataURL();
+  submitImage() {
+    this.imageData = this.cx.canvas.toDataURL();
   }
 }
