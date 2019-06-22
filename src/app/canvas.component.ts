@@ -151,7 +151,7 @@ export class CanvasComponent implements AfterViewInit {
   clearCanvas() {
     this.signatureData = undefined;
     this.cx.clearRect(0, 0, this.cx.canvas.width, this.cx.canvas.height);
-    this.drawSignatureLine();
+    // this.drawSignatureLine();
   }
 
   submitSignature() {
