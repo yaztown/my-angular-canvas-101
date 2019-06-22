@@ -38,29 +38,29 @@ export class CanvasComponent implements AfterViewInit {
     this.captureTouchEvents(canvasEl);
   }
 
-  private drawSignatureLine() {
-      const w = this.cx.canvas.width;
-      const h = this.cx.canvas.height;
-      const y = h * 0.7;
-      const x1 = w * 0.05;
-      const x2 = w * 0.95;
+  // private drawSignatureLine() {
+  //     const w = this.cx.canvas.width;
+  //     const h = this.cx.canvas.height;
+  //     const y = h * 0.7;
+  //     const x1 = w * 0.05;
+  //     const x2 = w * 0.95;
 
-      this.cx.lineWidth = 1;
-      this.cx.lineCap = 'round';
-      this.cx.strokeStyle = '#888';
+  //     this.cx.lineWidth = 1;
+  //     this.cx.lineCap = 'round';
+  //     this.cx.strokeStyle = '#888';
 
-      // start the path
-      this.cx.beginPath();
+  //     // start the path
+  //     this.cx.beginPath();
 
-      // set the line's start point
-      this.cx.moveTo(x1 , y);
+  //     // set the line's start point
+  //     this.cx.moveTo(x1 , y);
 
-      // draw a line to toPoint
-      this.cx.lineTo(x2, y);
+  //     // draw a line to toPoint
+  //     this.cx.lineTo(x2, y);
 
-      // stroke the current path with the styles we set earlier
-      this.cx.stroke();
-  }
+  //     // stroke the current path with the styles we set earlier
+  //     this.cx.stroke();
+  // }
 
   private captureEvents(canvasEl: HTMLCanvasElement) {
     // this will capture all mousedown events from the canvas element
