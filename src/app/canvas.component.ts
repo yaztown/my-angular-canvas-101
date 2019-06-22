@@ -32,7 +32,7 @@ export class CanvasComponent implements AfterViewInit {
     canvasEl.width = this.width;
     canvasEl.height = this.height;
 
-    this.drawSignatureLine();
+    // this.drawSignatureLine();
 
     this.captureEvents(canvasEl);
     this.captureTouchEvents(canvasEl);
